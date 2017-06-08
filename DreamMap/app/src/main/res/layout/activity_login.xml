@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:srcCompat="@drawable/btn_icon"
+            android:id="@+id/imageView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="用户名"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/username" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请输入用户名"
+                android:ems="10"
+                android:id="@+id/txt_username"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="手机号"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNumber" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请输入11位手机号"
+                android:ems="10"
+                android:layout_weight="1"
+                android:id="@+id/txt_phonenumber" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="密码"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/password" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请输入登录密码"
+                android:ems="10"
+                android:id="@+id/txt_password"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:text="忘记密码？"
+                android:textColor="@color/colorText"
+                android:onClick="forgetpwd"
+                android:id="@+id/v_forgetpsw" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="230dp"
+                android:layout_marginRight="30dp"
+                android:text="没有账号？去注册"
+                android:textColor="@color/colorText"
+                android:id="@+id/v_register" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:weightSum="1">
+
+            <Button
+                android:text="登录"
+                android:onClick="login"
+                android:background="@drawable/back_btnback"
+                android:layout_width="219dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btn_login"
+                android:layout_weight="0.29" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

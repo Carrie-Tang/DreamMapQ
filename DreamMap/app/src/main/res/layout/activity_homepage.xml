@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/tab_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorTransparent">
+                <TextView
+                    android:id="@+id/v_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorGray"
+                    android:text= "infomation" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/colorGray"
+                    android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/v_deal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_background"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/tab_mainpage"
+                    android:gravity="center"
+                    android:textColor="@drawable/tab_mainpage_text"
+                    android:text="主页"/>
+
+                <TextView
+                    android:id="@+id/v_scenic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_background"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/tab_place"
+                    android:gravity="center"
+                    android:textColor="@drawable/tab_place_text"
+                    android:text="景点"/>
+
+                <TextView
+                    android:id="@+id/v_user"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_background"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/tab_user"
+                    android:gravity="center"
+                    android:textColor="@drawable/tab_user_text"
+                    android:text="用户"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorGray"
+            android:layout_above="@id/tab_menu"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent"
+            android:layout_below="@+id/tab_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </FrameLayout>
+
+</RelativeLayout>

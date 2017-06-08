@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:srcCompat="@drawable/btn_icon"
+            android:id="@+id/imageView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="用户名"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ruser" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请输入用户名"
+                android:ems="10"
+                android:id="@+id/Rusertext"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="手机号"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rphone" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请输入11位手机号"
+                android:ems="10"
+                android:id="@+id/Rphonetext"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="验证码"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rverify" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请输入验证码"
+                android:ems="10"
+                android:id="@+id/RverifyText"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="发送验证码"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/back_btnverify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/button" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="设置密码"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rpassword" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请设置登录密码"
+                android:ems="10"
+                android:id="@+id/Rpasswordtext"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_medium"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="确认密码"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorGray"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rconfirmpwd" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:text="请确认登录密码"
+                android:ems="10"
+                android:id="@+id/RconfirmpwdText"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="230dp"
+                android:layout_marginRight="30dp"
+                android:text="已有账号？去登录"
+                android:textColor="@color/colorText" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <Button
+                android:text="注册"
+                android:background="@drawable/back_btnback"
+                android:layout_width="219dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/modify"
+                android:layout_weight="0.29" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/checkBox" />
+
+            <TextView
+                android:text="我已同意用户协议"
+                android:textColor="@color/colorText"
+                android:textSize="15dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/userAgreement"
+                android:layout_weight="0.24" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
